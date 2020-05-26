@@ -1,9 +1,11 @@
 {
   "scripts": {
     "start": "parcel index.html",
-    "build": "rimraf dist && parcel build index.html --public-url /snake/"
+    "build": "rimraf dist && parcel build index.html --public-url /snake/",
+    "deploy": "npm run build && node deploy.js"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "parcel": "^1.12.4",
     "rimraf": "^3.0.2",
     "typescript": "^3.9.3"
